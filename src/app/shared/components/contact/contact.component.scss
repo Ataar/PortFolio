@@ -1,0 +1,145 @@
+.contact {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  padding: 6rem 0;
+  color: var(--color-white);
+ width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  .content {
+    h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+  }
+
+  .contactInfo {
+    .boxx {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .icon {
+        font-size: 1.8rem;
+        color: var(--color-border-sec);
+        margin-right: 1rem;
+        margin-top: 0.2rem;
+      }
+
+      .text {
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        p, a {
+          font-size: 1rem;
+          margin: 0.2rem 0 0;
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: #ffcccb;
+          }
+        }
+      }
+    }
+  }
+
+  .contactform {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--border-color-primary);
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+
+        &:focus {
+          border-color: var(--color-border-sec);
+        }
+      }
+
+      .text-danger {
+        font-size: 0.875rem;
+        color: #e74c3c;
+        margin-top: 0.2rem;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: var(--color-border-sec);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #e6004c;
+      }
+
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1rem;
+
+    .contactform {
+      padding: 1.5rem;
+    }
+
+    .content h2 {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+
+

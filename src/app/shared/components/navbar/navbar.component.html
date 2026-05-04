@@ -1,0 +1,124 @@
+
+
+
+<header class="header" id="home">
+  <section class="navigation" id="mainnavbar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent mainnavbar">
+            <a class="navbar-brand" routerLink="">Mateen Ataar</a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              (click)="toggleMenu()"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars" [class.d-none]="isMenuOpen"></i>
+              <i class="fa-solid fa-xmark" [class.d-none]="!isMenuOpen"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" [ngClass]="{ 'show': isMenuOpen }">
+              <ul class="navbar-nav ml-auto">
+              <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+              <a class="nav-link" routerLink="profile" (click)=closeMenu()>profile</a>
+              </li>
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="about" (click)=closeMenu()>about</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="work" (click)=closeMenu()>work</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="skills" (click)=closeMenu()>skills</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="projects" (click)=closeMenu()>projects</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="contact" (click)=closeMenu()>contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <header class="header" id="home">
+  <section class="navigation" id="mainnavbar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent mainnavbar">
+            <a class="navbar-brand" routerLink="/">Mateen Ataar</a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              (click)="toggleMenu()"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars" [class.d-none]="isMenuOpen"></i>
+              <i class="fa-solid fa-xmark" [class.d-none]="!isMenuOpen"></i>
+            </button>
+
+            <div
+              class="collapse navbar-collapse"
+              [class.show]="isMenuOpen"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" (click)="scrollToSection('about')">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#work" (click)="scrollToSection('work')">work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills" (click)="scrollToSection('skills')">skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects" (click)="scrollToSection('projects')">projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" (click)="scrollToSection('contact')">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</header> -->

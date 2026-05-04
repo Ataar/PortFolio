@@ -1,0 +1,32 @@
+<section class="projects" id="projects" data-aos="fade-right">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="headers skill-head">
+          <h2>Latest <span>Projects</span></h2>
+          <p>Your Vision, Our Expertise</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card-columns allproject">
+          <div *ngFor="let project of projects" class="project card mb-4">
+            <a [href]="project.link" target="_blank">
+              <div class="card-header">
+                <h4 class="m-0">{{ project.title }}</h4>
+              </div>
+              <div class="card-body">
+                <img [src]="project.image" [alt]="project.title" />
+              </div>
+              <div class="card-footer">
+                <p>{{ project.description }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

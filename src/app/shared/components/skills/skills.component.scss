@@ -1,0 +1,473 @@
+
+
+.skill {
+  padding: 6rem 1rem;
+  background: #f9f9fb;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  
+  .skill-head {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-dark);
+       font-family: georgia;
+      span {
+        color: var(--color-border-sec);
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        margin: 0.7rem auto 0;
+        background: linear-gradient(to right, #ff0058, #23a6d5);
+        border-radius: 5px;
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+       font-family: georgia;
+      color: var(--text-grey);
+    }
+  }
+
+  .experience-details-container {
+    margin-bottom: 4rem;
+
+    .experience-sub-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--color-dark);
+    }
+
+    .article-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 0 1rem;
+
+      article {
+        background: #fff;
+        padding: 2rem 1.2rem;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          height: 5px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: linear-gradient(to right, #ff0058, #23a6d5);
+        }
+
+        img.icon {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 1rem;
+          animation: bounceIn 0.5s ease;
+        }
+
+        h3 {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: var(--color-dark);
+          margin: 0;
+        }
+      }
+    }
+  }
+    .contactBtn
+    {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 4px;
+    text-decoration: none;
+    background-color: #035525;
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+    font-family: georgia;
+    letter-spacing: 1px;
+    }
+}
+
+
+
+
+/* Animations */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .skill {
+    padding: 4rem 1rem;
+
+    .skill-head h2 {
+      font-size: 2.2rem;
+    }
+
+    .experience-sub-title {
+      font-size: 1.5rem;
+    }
+
+    .article-container {
+      grid-template-columns: 1fr;
+    }
+
+  .parent-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+}
+
+}
+
+}
+
+// @media (max-width: 425px) {
+//   .parent-container {
+//   display: flex;
+//   justify-content: center; /* horizontal center */
+// }
+//  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #########################################################################################
+
+// .skill {
+//   padding: 6rem 1rem;
+//   background-color: #f9f9f9;
+
+//   .skill-head {
+//     text-align: center;
+//     margin-bottom: 3rem;
+
+//     h2 {
+//       font-size: 3rem;
+//       font-weight: 700;
+//       color: var(--color-dark);
+
+//       span {
+//         color: var(--color-border-sec);
+//       }
+//     }
+
+//     p {
+//       font-size: 1.1rem;
+//       color: var(--text-grey);
+//       margin-top: 0.5rem;
+//     }
+//   }
+
+//   .experience-details-container {
+//     margin-bottom: 3rem;
+
+//     .experience-sub-title {
+//       font-size: 2rem;
+//       font-weight: 600;
+//       margin-bottom: 1.5rem;
+//       color: var(--color-dark);
+//       position: relative;
+
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         width: 80px;
+//         height: 4px;
+//         background: linear-gradient(to right, #ff0058, #23a6d5);
+//         bottom: -10px;
+//         left: 0;
+//         border-radius: 2px;
+//       }
+//     }
+
+//     .article-container {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+//       gap: 1.5rem;
+
+//       article {
+//         background: #fff;
+//         padding: 1.2rem;
+//         border-radius: 10px;
+//         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+//         display: flex;
+//         align-items: center;
+//         gap: 1rem;
+//         transition: all 0.3s ease;
+//         border-left: 4px solid var(--color-border-sec);
+//         animation: popIn 0.8s ease forwards;
+//         opacity: 0;
+//         transform: scale(0.95);
+
+//         &:hover {
+//           transform: scale(1.03);
+//           box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+//         }
+
+//         img.icon {
+//           width: 32px;
+//           height: 32px;
+//           object-fit: contain;
+//         }
+
+//         h3 {
+//           font-size: 1.1rem;
+//           margin: 0;
+//           color: var(--color-dark);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // Animation for articles
+// @keyframes popIn {
+//   0% {
+//     opacity: 0;
+//     transform: scale(0.9) translateY(20px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: scale(1) translateY(0);
+//   }
+// }
+
+// // Responsive improvements
+// @media (max-width: 768px) {
+//   .skill {
+//     padding: 3rem 1rem;
+
+//     .skill-head h2 {
+//       font-size: 2.2rem;
+//     }
+
+//     .experience-sub-title {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
+
+// ############################################################################################
+
+
+// .skill {
+//   padding: 6rem 1rem;
+//   background: linear-gradient(to right, #fdfbfb, #ebedee);
+
+//   .skill-head {
+//     text-align: center;
+//     margin-bottom: 4rem;
+
+//     h2 {
+//       font-size: 3rem;
+//       font-weight: 800;
+//       text-transform: uppercase;
+//       background: linear-gradient(to right, #ff0058, #23a6d5);
+//       -webkit-background-clip: text;
+//       -webkit-text-fill-color: transparent;
+//       animation: fadeInDown 1s ease-in-out;
+
+//       span {
+//         color: var(--color-dark);
+//       }
+//     }
+
+//     p {
+//       font-size: 1.1rem;
+//       color: var(--text-grey);
+//       animation: fadeIn 2s ease-in-out;
+//     }
+//   }
+
+//   .experience-details-container {
+//     margin-bottom: 4rem;
+
+//     .experience-sub-title {
+//       font-size: 2rem;
+//       font-weight: 700;
+//       color: var(--color-border-sec);
+//       position: relative;
+//       padding-bottom: 0.5rem;
+//       margin-bottom: 2rem;
+//       animation: bounceIn 1s ease;
+
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         width: 70px;
+//         height: 4px;
+//         background: #23a6d5;
+//         bottom: 0;
+//         left: 0;
+//         border-radius: 2px;
+//       }
+//     }
+
+//     .article-container {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+//       gap: 2rem;
+
+//       article {
+//         background: white;
+//         padding: 1.5rem;
+//         border-radius: 15px;
+//         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+//         display: flex;
+//         align-items: center;
+//         gap: 1rem;
+//         position: relative;
+//         transform: translateY(30px);
+//         opacity: 0;
+//         animation: cardFadeIn 0.6s ease forwards;
+//         animation-delay: calc(0.1s * var(--i));
+
+//         &:hover {
+//           transform: scale(1.05);
+//           box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+//         }
+
+//         img.icon {
+//           width: 38px;
+//           height: 38px;
+//         }
+
+//         h3 {
+//           font-size: 1.2rem;
+//           font-weight: 600;
+//           color: var(--color-dark);
+//         }
+
+//         &::before {
+//           content: '';
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           width: 5px;
+//           height: 100%;
+//           background: linear-gradient(to bottom, #ff0058, #23a6d5);
+//           border-radius: 5px 0 0 5px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// /* Animations */
+// @keyframes cardFadeIn {
+//   0% {
+//     transform: translateY(30px);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes fadeInDown {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-30px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes bounceIn {
+//   0% {
+//     transform: scale(0.95);
+//     opacity: 0;
+//   }
+//   80% {
+//     transform: scale(1.05);
+//     opacity: 1;
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
+
+// /* Responsive */
+// @media (max-width: 768px) {
+//   .skill {
+//     padding: 3rem 1rem;
+
+//     .skill-head h2 {
+//       font-size: 2.2rem;
+//     }
+
+//     .experience-sub-title {
+//       font-size: 1.4rem;
+//     }
+
+//     .article-container {
+//       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+//     }
+//   }
+// }
+
+

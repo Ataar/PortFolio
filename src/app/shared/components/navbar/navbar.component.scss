@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color 0.3s ease;
+  background-image: linear-gradient(25deg, var(--color-gradient));
+}
+
+.navigation {
+  padding: 0.25rem 0;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f0eded;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f8f6f3;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 1.2rem;
+    color: #fff6f6;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+
+    ul.navbar-nav {
+      li.nav-item {
+        margin-left: 1rem;
+
+        .nav-link {
+          color: var(--color-white);
+          font-weight: 500;
+          position: relative;
+          transition: color 0.3s;
+          font-size: 20px;
+          font-family: georgia;
+          text-transform: capitalize;
+          // margin: 0  12px;
+
+          &:hover {
+                  color: #f3226b;
+
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #eb4196;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+  .nav-link {
+    // padding-bottom: 6px !important;
+    font-size: 14px 
+  }
+
+  .nav-link::after {
+    height: auto !important
+  }
+}
+
+
+
+  .navbar-nav .nav-item.active .nav-link {
+color: #c2ff0a !important;
+}
+
+// .navbar-nav .nav-item.active .nav-link:hover {
+// color: #ffd900 !important;
+// }
+
+}
+
+// Responsive fix for toggler and mobile nav
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    // background-color: rgba(0, 0, 0, 0.85);
+    padding: 1rem;
+
+    ul.navbar-nav {
+      li.nav-item {
+        margin: 0.5rem 0;
+
+        .nav-link {
+          color: #fff;
+
+          &:hover {
+                 color: #ff0058;
+
+          }
+        }
+      }
+    }
+  }
+
+  
+}
+
+

@@ -1,0 +1,48 @@
+
+<footer class="footer py-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="socialIcons mb-2">
+          <a *ngFor="let social of socialLinks" [href]="social.url" target="_blank">
+            <i *ngIf="social.icon !== 'vercel-icon'" [class]="social.icon"></i>
+
+            <!-- Custom Vercel Icon -->
+            <svg *ngIf="social.icon === 'vercel-icon'" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" viewBox="0 0 256 222" fill="white">
+              <path d="M128 0L256 222H0L128 0z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="footerbottom">
+          <p class="m-0">{{ copyrightText }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- ############################################################################################# -->
+
+
+
+
+<!-- <footer class="footer py-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="socialIcons mb-2">
+          <a *ngFor="let social of socialLinks" [href]="social.url" target="_blank">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+        <div class="footerbottom">
+          <p class="m-0">{{ copyrightText }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+ -->

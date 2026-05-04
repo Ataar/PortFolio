@@ -1,0 +1,21 @@
+.upbtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff4b2b;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+
+  i {
+    font-size: 1.2rem;
+    color: rgb(253, 16, 16);
+  }
+
+  &.show {
+    display: block;
+  }
+}
+

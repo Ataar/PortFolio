@@ -1,0 +1,172 @@
+.intro-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-image: linear-gradient(25deg, var(--color-gradient));
+  background-size: 300% 300%;
+  animation: bganimation 5s ease-in-out infinite alternate;
+  padding: 5rem 3rem;
+  color: var(--color-white);
+  position: relative;
+
+  @media (max-width: 992px) {
+    padding: 4rem 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1rem;
+  }
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+// Main Title Section
+.mainTitle {
+  .p01,
+  .p02 {
+    font-weight: 700;
+    padding: 1rem 0;
+    color: var(--color-white);
+  }
+
+  .p01 {
+    font-size: 2.6rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  .p02 {
+    font-size: 2.1rem;
+    color: var(--color-border-sec);
+
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  .p02 .text
+  {
+    // color: rgb(181, 231, 220);
+    color: rgb(143, 173, 159);
+
+  }
+
+  .list01 {
+    padding: 1rem 0;
+    font-weight: 700;
+  }
+}
+
+// Text + Change Text Block
+.txtcontent {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+
+  .changetxt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--color-border-sec);
+
+    li {
+      white-space: nowrap;
+      animation: slideText 3s steps(1) infinite;
+    }
+  }
+}
+
+// CV Download Button
+.contact-btn .btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-border-sec);
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:hover {
+    color: var(--color-white);
+  }
+}
+
+
+@media(max-width:425px)
+{
+  .col-md-8
+  {
+    text-align: center;
+  }
+  .txtcontent {
+    justify-content: center;
+}
+}
+// Profile Image
+figure.photo {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-white);
+  margin: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 992px) {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 14px;
+  }
+
+  @media (max-width: 576px) {
+    width: 12rem;
+    height: 12rem;
+  }
+}

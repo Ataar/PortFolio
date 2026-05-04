@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+  --color-dark: #000;
+  --color-white: #fff;
+  --color-gradient: #e73c7e, #000000, #23a6d5;
+  /* --color-border-pri: #03a9f4; */
+  --color-border-sec: #ff0058;
+  --text-grey: #999999;
+  --border-color-primary: #eaeaea;
+  --border-grey: #333;
+  --footer-bg: #eaf4f4;
+}
+
+

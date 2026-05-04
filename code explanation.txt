@@ -1,0 +1,33 @@
+code explanation:-
+
+
+Contact component:-
+
+TS file:-
+
+
+🔍 Explanation:-
+
+ @ViewChild() Angular ka decorator hai.
+
+Ye component ke template (HTML) me diye gaye kisi template reference variable ko TypeScript class me laane ke liye use hota hai.
+
+Yahaan 'nameInput' wo reference hai jo aapne HTML me #nameInput diya tha.
+
+ElementRef ek wrapper hai jo actual DOM element ko hold karta hai.
+
+ nativeElement se aap us pure HTML element tak pahunch jaate ho.
+
+--------------------------------------------------------------------------------------------------
+
+
+
+Concept                                    	              Use
+
+#nameInput	                           HTML input ko reference name deta hai
+@ViewChild('nameInput')	            Us reference se TS me access karta hai
+ElementRef	                           Actual DOM element ka wrapper hai
+nativeElement.focus()	           Input ko focus karta hai
+ngAfterViewInit()	                          Tab chalta hai jab HTML view ready ho
+
+
