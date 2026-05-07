@@ -36,6 +36,6 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  copyright = 'Copyright © Mateen 2025. All Rights Reserved.';
+  copyright = 'Copyright © Mateen 2026. All Rights Reserved.';
 }
 
